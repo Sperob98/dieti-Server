@@ -1,0 +1,26 @@
+# suppress inspection "UnusedProperty" for whole file
+
+spring.application.name=dieti2024
+debug=true
+spring.thymeleaf.cache=false
+
+spring.datasource.url=jdbc:postgresql://ingsw.postgres.database.azure.com:5432/postgres
+    spring.datasource.username=lrr
+spring.datasource.password=Dieti2024LoRoRa
+spring.jpa.hibernate.ddl-auto=update
+
+server.port=8081
+
+secretKey = 843567893696976453275974432697R634976R738467TR678T34865R6834R8763T478378637664538745673865783678548735687R3
+
+okta.audience = api://default:
+okta.issuer = https://dev-123456.okta.com/oauth2/default
+
+azure.connectionString = TODO: inserire connection string per il server Azure
+azure.containerName = upload
+
+logging.level.org.hibernate.SQL=INFO
+logging.level.org.hibernate.type.descriptor.sql=INFO
+
+comando
+mvn clean verify sonar:sonar -Dsonar.login=sqp_d6254392c36fdf40e90558f0eb8237b71df4b14f
